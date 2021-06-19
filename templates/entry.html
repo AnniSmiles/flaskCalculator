@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+<script>
+	function display(val){
+		document.getElementById("result").value+=val;
+}
+
+
+
+
+function clr(){
+        document.getElementById("result").value = "";
+}
+</script>
+<tr>
+        
+    
+    <td colspan="4"><input type="text" id="result" name="submit_action" action="/" onkeydown="return false"/>{{mathExpr}}</td>
+         
+
+</tr>
+{% endblock %}
